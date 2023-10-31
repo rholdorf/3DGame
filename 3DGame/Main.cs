@@ -53,6 +53,7 @@ namespace _3DGame
             CurrentScene.ScreenResized(GraphicsDevice);
             // Mouse.SetPosition(device.Viewport.Width / 2, device.Viewport.Height / 2);
         }
+        
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
         /// This is where it can query for any required services and load any non-graphic

@@ -18,7 +18,7 @@ namespace GameObject.AbilityLogic
             FileStream fs;
             string cd = System.Reflection.Assembly.GetExecutingAssembly().Location;
             cd = System.IO.Path.GetDirectoryName(cd);
-            string filename = cd + "\\gamedata\\abilitytemplates\\" + ClassName + ".gdf";
+            string filename = cd + "/gamedata/abilitytemplates/" + ClassName + ".gdf";
             try
             {
                 fs = new FileStream(filename, FileMode.Open);

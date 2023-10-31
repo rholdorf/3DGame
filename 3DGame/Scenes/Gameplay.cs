@@ -54,7 +54,7 @@ namespace _3DGame.Scenes
 
         private void TakeScreenshot(GraphicsDevice device)
         {
-            string fn = "screenshots\\";
+            string fn = "screenshots/";
             DateTime now = DateTime.Now;
             
             fn += now.ToString("yyyyMMddhhmmss") + counter + ".png";
@@ -548,7 +548,7 @@ namespace _3DGame.Scenes
         public void Init(GraphicsDevice device, ContentManager content)
         {
 
-            GameModel.ModelGeometryCompiler.ModelBaseDir = "Scenes\\GameplayAssets\\Models\\";
+            GameModel.ModelGeometryCompiler.ModelBaseDir = "Scenes/GameplayAssets/Models/";
             GameObject.IO.MagicFileReader mr=new GameObject.IO.MagicFileReader();
             List<CharacterTemplate> classes = mr.ReadClassFile();
             List<ModularAbility> skills = mr.ReadAbilityFile();
@@ -572,17 +572,17 @@ namespace _3DGame.Scenes
 
             #region load game textures
             Textures = new Dictionary<string, Texture2D>();
-            Textures["grass_overworld"] = LoadTex2D(device, "graphics\\terraintiles.png");
-            Textures["waterbump"] = LoadTex2D(device, "graphics\\waterbump.jpg");
-            Textures["rock"] = LoadTex2D(device, "graphics\\rock.jpg");
-            Textures["sand"] = LoadTex2D(device, "graphics\\sand.png");
-            Textures["point_sphere"] = LoadTex2D(device, "graphics\\sphere.png");
-            Textures["ray"] = LoadTex2D(device, "graphics\\ray.png");
-            Textures["mapsprites"] = LoadTex2D(device, "graphics\\mapsprites.png");
-            Textures["mapnavring"] = LoadTex2D(device, "graphics\\mapnavring.png");
-            Textures["mapoverlay"] = LoadTex2D(device, "graphics\\mapoverlay.png");
-            Textures["equipdoll"] = LoadTex2D(device, "graphics\\vitruvian.png");
-            Textures["dummy"] = LoadTex2D(device, "graphics\\gray.png");
+            Textures["grass_overworld"] = LoadTex2D(device, "graphics/terraintiles.png");
+            Textures["waterbump"] = LoadTex2D(device, "graphics/waterbump.jpg");
+            Textures["rock"] = LoadTex2D(device, "graphics/rock.jpg");
+            Textures["sand"] = LoadTex2D(device, "graphics/sand.png");
+            Textures["point_sphere"] = LoadTex2D(device, "graphics/sphere.png");
+            Textures["ray"] = LoadTex2D(device, "graphics/ray.png");
+            Textures["mapsprites"] = LoadTex2D(device, "graphics/mapsprites.png");
+            Textures["mapnavring"] = LoadTex2D(device, "graphics/mapnavring.png");
+            Textures["mapoverlay"] = LoadTex2D(device, "graphics/mapoverlay.png");
+            Textures["equipdoll"] = LoadTex2D(device, "graphics/vitruvian.png");
+            Textures["dummy"] = LoadTex2D(device, "graphics/gray.png");
             Fonts = new Dictionary<string, SpriteFont>();
             Fonts["font1"] = content.Load<SpriteFont>("font1");
             Fonts["font1"].DefaultCharacter = '#';
@@ -604,9 +604,9 @@ namespace _3DGame.Scenes
 
             #region GUI - onlybasics
             GUIRenderer = new GUI.Renderer(device);
-            GUIRenderer.WindowSkin = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\winskin.png", System.IO.FileMode.Open));
-            GUIRenderer.InventoryPartsMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\itemparts.png", System.IO.FileMode.Open));
-            GUIRenderer.AbilityMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\icons.png", System.IO.FileMode.Open));
+            GUIRenderer.WindowSkin = Texture2D.FromStream(device, new System.IO.FileStream("graphics/winskin.png", System.IO.FileMode.Open));
+            GUIRenderer.InventoryPartsMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics/itemparts.png", System.IO.FileMode.Open));
+            GUIRenderer.AbilityMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics/icons.png", System.IO.FileMode.Open));
             GUIRenderer.GUIEffect = content.Load<Effect>("GUI");
             GUIRenderer.UIFont = Fonts["font1"];
             GUIRenderer.FloatFont = Fonts["fontN"];
@@ -879,7 +879,7 @@ namespace _3DGame.Scenes
 
                 foreach (string texname in GameModel.Model.TextureList)
                 {
-                    string path = GameModel.ModelGeometryCompiler.ModelBaseDir + "\\textures\\" + texname + ".png";
+                    string path = GameModel.ModelGeometryCompiler.ModelBaseDir + "/textures/" + texname + ".png";
                     if (!System.IO.File.Exists(path))
                         continue;
                     Texture2D tex;

@@ -29,7 +29,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\abilities.gdf";
+                FileName = "gamedata/abilities.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -60,7 +60,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\classes.gdf";
+                FileName = "gamedata/classes.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -75,7 +75,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\classes.gdf";
+                FileName = "gamedata/classes.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -95,7 +95,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\itemtypes.gdf";
+                FileName = "gamedata/itemtypes.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -111,7 +111,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\itemtypes.gdf";
+                FileName = "gamedata/itemtypes.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -130,7 +130,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\itemaddons.gdf";
+                FileName = "gamedata/itemaddons.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);
@@ -150,7 +150,7 @@ namespace GameObject.IO
         {
             string fileName;
             if (FileName == "")
-                FileName = "gamedata\\itemmasters.gdf";
+                FileName = "gamedata/itemmasters.gdf";
             fileName = FileName;
             stream = new FileStream(fileName, FileMode.OpenOrCreate);
             writer = new BinaryWriter(stream);

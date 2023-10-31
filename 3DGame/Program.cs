@@ -2,7 +2,7 @@
 
 namespace _3DGame
 {
-#if WINDOWS || LINUX
+
     /// <summary>
     /// The main class.
     /// </summary>
@@ -11,12 +11,11 @@ namespace _3DGame
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             using (var game = new Main())
                 game.Run();
         }
     }
-#endif
+
 }

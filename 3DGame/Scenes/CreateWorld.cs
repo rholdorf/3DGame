@@ -46,9 +46,9 @@ namespace _3DGame.Scenes
             Fonts["font1"] = content.Load<SpriteFont>("font1");
 
             GUIRenderer = new GUI.Renderer(device);
-            GUIRenderer.WindowSkin = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\winskin.png", System.IO.FileMode.Open));
-            GUIRenderer.InventoryPartsMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\itemparts.png", System.IO.FileMode.Open));
-            GUIRenderer.AbilityMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics\\icons.png", System.IO.FileMode.Open));
+            GUIRenderer.WindowSkin = Texture2D.FromStream(device, new System.IO.FileStream("graphics/winskin.png", System.IO.FileMode.Open));
+            GUIRenderer.InventoryPartsMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics/itemparts.png", System.IO.FileMode.Open));
+            GUIRenderer.AbilityMap = Texture2D.FromStream(device, new System.IO.FileStream("graphics/icons.png", System.IO.FileMode.Open));
             GUIRenderer.GUIEffect = content.Load<Effect>("GUI");
             GUIRenderer.UIFont = Fonts["font1"];
 
@@ -58,7 +58,7 @@ namespace _3DGame.Scenes
             b = new SpriteBatch(device);
 
             map = new WorldMap(800, 800);
-            Texture2D colortex= Texture2D.FromStream(device, new System.IO.FileStream("graphics\\minecraftgrass.png", System.IO.FileMode.Open));
+            Texture2D colortex= Texture2D.FromStream(device, new System.IO.FileStream("graphics/minecraftgrass.png", System.IO.FileMode.Open));
             map.ColourMap = new Color[colortex.Width * colortex.Height];
             colortex.GetData<Color>(map.ColourMap);
             map.ColourMapSize = new Point(colortex.Width, colortex.Height);

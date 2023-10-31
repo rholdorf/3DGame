@@ -68,7 +68,7 @@ namespace GameObject.Items
             FileStream fs;
             string cd = System.Reflection.Assembly.GetExecutingAssembly().Location;
             cd = System.IO.Path.GetDirectoryName(cd);
-            string filename = cd + "\\gamedata\\itemtemplates\\"+Name+".gdf";
+            string filename = cd + "/gamedata/itemtemplates/"+Name+".gdf";
             try
             {
                 fs = new FileStream(filename, FileMode.Open);

@@ -1,27 +1,27 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DGame", "3DGame\3DGame.csproj", "{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3DGame", "3DGame\3DGame.csproj", "{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terrain", "Terrain\Terrain.csproj", "{5194618F-FE7F-434F-B5B6-D9DCE3357BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terrain", "Terrain\Terrain.csproj", "{5194618F-FE7F-434F-B5B6-D9DCE3357BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameModel", "GameModel\GameModel.csproj", "{A3377DE7-8E2E-456D-8120-61C21730EAC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameModel", "GameModel\GameModel.csproj", "{A3377DE7-8E2E-456D-8120-61C21730EAC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{1416F2FF-B454-45AB-92BE-811BFC66F6AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUI", "GUI\GUI.csproj", "{1416F2FF-B454-45AB-92BE-811BFC66F6AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelGenerator", "ModelGenerator.cs\ModelGenerator.csproj", "{E9B7C791-40DC-478F-8EC1-B5D9802E8D87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelGenerator", "ModelGenerator.cs\ModelGenerator.csproj", "{E9B7C791-40DC-478F-8EC1-B5D9802E8D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelEditor", "ModelEditor\ModelEditor.csproj", "{712205DD-5E84-4D1A-BD75-F1B0651A9558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelEditor", "ModelEditor\ModelEditor.csproj", "{712205DD-5E84-4D1A-BD75-F1B0651A9558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameObject", "GameObject\GameObject.csproj", "{FFA614CA-BFAF-4E43-B3ED-7D23654940CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameObject", "GameObject\GameObject.csproj", "{FFA614CA-BFAF-4E43-B3ED-7D23654940CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicEditor", "MagicEditor\MagicEditor.csproj", "{B3277067-7A6C-4849-B972-32EA05762D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicEditor", "MagicEditor\MagicEditor.csproj", "{B3277067-7A6C-4849-B972-32EA05762D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldGen", "WorldGen\WorldGen.csproj", "{E5DB570A-1011-4E8E-A105-0D53805DF2B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldGen", "WorldGen\WorldGen.csproj", "{E5DB570A-1011-4E8E-A105-0D53805DF2B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldInfo", "WorldInfo\WorldInfo.csproj", "{EF163BC5-6C20-4C63-9119-9EE13D129D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldInfo", "WorldInfo\WorldInfo.csproj", "{EF163BC5-6C20-4C63-9119-9EE13D129D9F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FFA614CA-BFAF-4E43-B3ED-7D23654940CB} = {FFA614CA-BFAF-4E43-B3ED-7D23654940CB}
 		{A3377DE7-8E2E-456D-8120-61C21730EAC5} = {A3377DE7-8E2E-456D-8120-61C21730EAC5}
@@ -35,12 +35,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Debug|x86.ActiveCfg = Debug|x86
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Debug|x86.Build.0 = Debug|x86
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Release|Any CPU.ActiveCfg = Release|x86
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Release|x86.ActiveCfg = Release|x86
-		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Release|x86.Build.0 = Release|x86
 		{5194618F-FE7F-434F-B5B6-D9DCE3357BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5194618F-FE7F-434F-B5B6-D9DCE3357BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5194618F-FE7F-434F-B5B6-D9DCE3357BCA}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -73,12 +67,13 @@ Global
 		{E9B7C791-40DC-478F-8EC1-B5D9802E8D87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9B7C791-40DC-478F-8EC1-B5D9802E8D87}.Release|x86.ActiveCfg = Release|Any CPU
 		{E9B7C791-40DC-478F-8EC1-B5D9802E8D87}.Release|x86.Build.0 = Release|Any CPU
-		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Debug|x86.ActiveCfg = Debug|x86
 		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Debug|x86.Build.0 = Debug|x86
 		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Release|Any CPU.ActiveCfg = Release|x86
 		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Release|x86.ActiveCfg = Release|x86
 		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Release|x86.Build.0 = Release|x86
+		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712205DD-5E84-4D1A-BD75-F1B0651A9558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA614CA-BFAF-4E43-B3ED-7D23654940CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFA614CA-BFAF-4E43-B3ED-7D23654940CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA614CA-BFAF-4E43-B3ED-7D23654940CB}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -111,6 +106,8 @@ Global
 		{EF163BC5-6C20-4C63-9119-9EE13D129D9F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF163BC5-6C20-4C63-9119-9EE13D129D9F}.Release|x86.ActiveCfg = Release|Any CPU
 		{EF163BC5-6C20-4C63-9119-9EE13D129D9F}.Release|x86.Build.0 = Release|Any CPU
+		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5AD3FC-9448-436A-9BDE-9EB1A491E2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

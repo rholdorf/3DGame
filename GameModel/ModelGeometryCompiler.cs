@@ -195,7 +195,7 @@ namespace GameModel
                 Model.TexturePool = new Dictionary<string, Texture2D>();
             if (Model.TextureList == null)
                 Model.TextureList = new List<string>();
-            string modeldata= System.IO.File.ReadAllText(ModelBaseDir+"\\"+name+".mgf");
+            string modeldata= System.IO.File.ReadAllText(ModelBaseDir+"/"+name+".mgf");
             if(Substitutes!=null)
             {
                 foreach(KeyValuePair<string,string> replace in Substitutes)
@@ -279,7 +279,7 @@ namespace GameModel
                 ls = new LineSplitter(lines[state.LineNumber]);
                 command = ls.Next();
             }
-            string choreofname = ModelBaseDir + "\\" + choreoname + ".mcf";
+            string choreofname = ModelBaseDir + "/" + choreoname + ".mcf";
             //create a dummy if doesn't exist. Dumb workaround but works for now
             if(!System.IO.File.Exists(choreofname))
             {
